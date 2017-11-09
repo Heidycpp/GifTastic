@@ -1,0 +1,46 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+	background-color:#c0c0c0;
+  	margin-bottom: 60px;
+}
+
+#wrap {
+	background-color:#c0c0c0;
+	color:#646464;
+}
+
+#title {
+	color:#fff;
+	text-align:center;
+	font-family: 'Orbitron', sans-serif;
+	padding-top:16px;
+	color: black;
+}
+
+#buttonArea{
+	margin-top:10px;
+
+}
+.btn {
+	margin:3px;
+	color: black;
+}
+
+#gifArea {
+	margin-top:20px;
+}
+
+.submit {
+	background-color: #46a2c5;
+	color:black;
+	border:1px solid #46a2c5;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.clear {
+	clear:both;
+}
