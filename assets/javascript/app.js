@@ -8,7 +8,7 @@ var buttonGenerator = function (){
 	 $("#buttonArea").empty();
 	// loops through the array and creates buttons
 	for(i = 0; i < titles.length; i++) {
-		button = $("<button type=" + "button" + ">" + titles[i] + "</button>").addClass("btn btn-info").attr("data",titles[i]);
+		button = $("<button type=" + "button" + ">" + titles[i] + "</button>").addClass("btn btn-light").attr("data",titles[i]);
 		$("#buttonArea").append(button);
 	};
 }
