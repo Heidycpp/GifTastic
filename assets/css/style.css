@@ -37,6 +37,7 @@ p {
 	font-weight: 900;
 	font-size: 200%;
 	font-border: black;
+	text-shadow: 2px 2px 8px black;
 }
 .submit {
 	background-color: white;
