@@ -1,5 +1,4 @@
 
-https://heidycpp.github.io/GifTastic/.
 # GifTastic
 
 

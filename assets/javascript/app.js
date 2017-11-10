@@ -1,9 +1,8 @@
-var titles = ["Thundercats", "Tom and Jerry", "The Pink Panther", "Inspector Gadget", "He-Man", "X-Men", "Transformers", "Superman", "Captain Planet", "The Jetsons", "smurfs", "DangerMouse", "Voltron"];
+var titles = ["Justice League", "superman", "Batman", "Wonder Woman", "Aquaman", "The Flash", "Green Lantern", "Martian Manhunter", "Green Arrow", "Hawkman", "Captain Marvel", "Hawkgirl", "Captain Atom", "DC Cyborg"];
 
 var button;
 // new title that will be added through input
 var newTitles = "";  
-
 // function to create new buttons from the titles array
 var buttonGenerator = function (){
 	 $("#buttonArea").empty();
@@ -13,15 +12,12 @@ var buttonGenerator = function (){
 		$("#buttonArea").append(button);
 	};
 }
-
 // The user clicks on a button, which generates images from the GIPHY API 
 $("#buttonArea").on("click", ".btn", function(){
 	$("#gifArea").empty();
 
   		var cartoon = $(this).attr("data");
   		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + cartoon + "&apikey=CjpYnNJTCAkrTYyRQBb9McZqPTr1YuND&limit=5";
-
-
 
   		$.ajax({
   			url: queryURL,
@@ -31,7 +27,6 @@ $("#buttonArea").on("click", ".btn", function(){
   			console.log(response);
   			
           	var results = response.data;
-
 
           	for (var i = 0; i < results.length; i++) {
           		// a div is created to hold a gif of any title
@@ -59,16 +54,13 @@ $("#buttonArea").on("click", ".btn", function(){
  			}
   		})
   })
-
-
-// User clicks the still GIPHY images, and it animates
+// User clicks the still GIPHY images, and it animates, click again and it stops
 $("#gifArea").on("click", ".gif", function(event){
 	event.preventDefault();
 	
-
 	var state = $(this).attr("data-state");
 	
-	// according to the current state gifs toggle between animate and still 
+	
 	if (state === "still") {
     $(this).attr("src", $(this).attr("data-animate"));
     $(this).attr("data-state", "animate");
@@ -78,11 +70,7 @@ $("#gifArea").on("click", ".gif", function(event){
   }
 
 })
-   
-
 // takes the value from the input box and adds it into the array
-
-
 $(".submit").on("click", function(event){
 	event.preventDefault();
 
