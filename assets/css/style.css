@@ -32,6 +32,12 @@ body {
 	margin-top:20px;
 
 }
+p {
+	color: red;
+	font-weight: 900;
+	font-size: 200%;
+	font-border: black;
+}
 .submit {
 	background-color: white;
 	color:black;
