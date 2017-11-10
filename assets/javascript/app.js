@@ -16,9 +16,10 @@ var buttonGenerator = function (){
 
 // The user clicks on a button, which generates images from the GIPHY API 
 $("#buttonArea").on("click", ".btn", function(){
+	$("#gifArea").empty();
 
   		var cartoon = $(this).attr("data");
-  		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + cartoon + "&apikey=CjpYnNJTCAkrTYyRQBb9McZqPTr1YuND";
+  		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + cartoon + "&apikey=CjpYnNJTCAkrTYyRQBb9McZqPTr1YuND&limit=5";
 
 
 
