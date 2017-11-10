@@ -1,4 +1,4 @@
-var titles = ["Justice League", "superman", "Batman", "Wonder Woman", "Aquaman", "The Flash", "Green Lantern", "Martian Manhunter", "Green Arrow", "Hawkman", "Captain Marvel", "Hawkgirl", "Captain Atom", "DC Cyborg"];
+var titles = ["Justice League", "Superman", "Batman", "Wonder Woman", "Aquaman", "The Flash", "Green Lantern", "Martian Manhunter", "Green Arrow", "Hawkman", "Captain Marvel", "Hawkgirl", "Captain Atom", "DC Cyborg"];
 
 var button;
 // new title that will be added through input
